@@ -1,9 +1,9 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
-const user = require('./sever/wax-onServer/routes/user')
-const package = require('./sever/wax-onServer/routes/package')
-const order = require("./sever/wax-onServer/routes/order")
+const user = require('./realServer/controllers/routes/routes/routes/user')
+const package = require('./realServer/controllers/routes/routes/routes/package')
+const order = require("./realServer/controllers/routes/routes/routes/order")
 const cors = require('cors')
 const path = require('path')
 const port = process.env.PORT || 4000
