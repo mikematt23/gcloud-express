@@ -1,4 +1,4 @@
-const pool = require('../mySQl/connections')
+const pool = require('../mySQL/connections')
 const mysql = require('mysql')
 
 
