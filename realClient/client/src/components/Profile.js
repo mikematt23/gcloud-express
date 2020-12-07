@@ -72,7 +72,7 @@ const Profile = (props)=>{
    if(address === "" || town === "" || state === ""){
      setMessage("All Fields Must Be Filled Out")
    }else{
-     let url = `http://localhost:5000/updateAddress/${userID}/${address}/${town}/${state}`
+     let url = `https://aca-final-project.uc.r.appspot.com/updateAddress/${userID}/${address}/${town}/${state}`
      fetch(url,{method:"PUT"})
      setMessage("address Changed")
    }
@@ -82,7 +82,7 @@ const Profile = (props)=>{
    if(password != confirmPassword){
      setMessage2("Password Doesn't match")
    }else{
-     let url =`http://localhost:5000/updatePassword/${userID}/${password}`
+     let url =`https://aca-final-project.uc.r.appspot.com/updatePassword/${userID}/${password}`
      setMessage2("Password Changed")
      fetch(url,{method:"PUT"})
    }
