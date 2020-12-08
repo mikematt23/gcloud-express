@@ -6,7 +6,7 @@ const user = (users)=>{
 }
 export const importUser = ()=>{
   return (dispatch)=>{
-    fetch('https://aca-final-project.uc.r.appspot.com/users')
+    fetch('http://localhost:4000/users')
     .then((res)=>{
       return res.json()
     }) .then((data)=>{

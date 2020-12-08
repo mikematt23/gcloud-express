@@ -4,7 +4,7 @@ const controller = require('../controllers/user')
 const cors = require('cors')
 
 router.use(cors({
-  origin: 'https://aca-final-project-front-end.herokuapp.com'
+  origin: 'http://localhost:4000'
 }))
 
 router.get('/email/:email',controller.getUser)

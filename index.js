@@ -18,7 +18,7 @@ app.use(package)
 app.use(user)
 app.use(order)
 app.use(cors({
-   origin: 'https://aca-final-project-front-end.herokuapp.com'
+   origin: 'http://localhost:4000'
 }))
 
 app.get('/', (req, res) => {
